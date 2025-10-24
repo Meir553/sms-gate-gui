@@ -45,8 +45,8 @@ Visit [https://sms-gate.app](https://sms-gate.app) to learn more about the servi
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd sms-gateway-v2
+git clone https://github.com/Meir553/sms-gate-gui.git
+cd sms-gate-gui
 ```
 
 ### 2. Install Dependencies
@@ -100,7 +100,7 @@ The application will be available at `http://localhost:3003`
 ## 📁 Project Structure
 
 ```
-sms-gateway-v2/
+sms-gate-gui/
 ├── client-ts/gui/          # React frontend
 │   ├── src/
 │   │   ├── components/     # React components
@@ -273,7 +273,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Getting Help
 
-1. Check the [Issues](https://github.com/your-username/sms-gateway-v2/issues) page
+1. Check the [Issues](https://github.com/Meir553/sms-gate-gui/issues) page
 2. Review the logs in the browser console and server terminal
 3. Ensure all environment variables are set correctly
 4. Visit the [SMS Gateway documentation](https://sms-gate.app) for API details
