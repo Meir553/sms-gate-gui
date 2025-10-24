@@ -66,7 +66,14 @@ CLOUD_MODE=false
 SHOW_INBOUND_WEBHOOK=true
 ```
 
-### 4. Start the Application
+### 4. Build the GUI (Required for Production)
+
+```bash
+# Build the React frontend for production
+npm run build-gui
+```
+
+### 5. Start the Application
 
 ```bash
 # Development mode (with hot reload)
@@ -198,6 +205,8 @@ RUN npm run build-gui
 EXPOSE 3003
 CMD ["npm", "start"]
 ```
+
+**Note:** The Docker build includes the `npm run build-gui` step to ensure the React frontend is built before the container starts.
 
 ## 🤝 Contributing
 
