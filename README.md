@@ -1,6 +1,8 @@
 # SMS Gateway GUI v2
 
-A modern, web-based GUI for the SMS Gateway service with React, TypeScript, and Material-UI. This application provides a user-friendly interface for managing SMS operations, devices, webhooks, and settings.
+A modern, web-based GUI for the [SMS Gateway service](https://sms-gate.app) with React, TypeScript, and Material-UI. This application provides a user-friendly interface for managing SMS operations, devices, webhooks, and settings.
+
+> **Official SMS Gateway Service**: [https://sms-gate.app](https://sms-gate.app)
 
 ## 🚀 Features
 
@@ -12,6 +14,17 @@ A modern, web-based GUI for the SMS Gateway service with React, TypeScript, and 
 - **Logs Viewing** - View system logs (can be disabled in cloud mode)
 - **Auto-login Support** - Environment-based authentication
 - **Cloud Mode** - Hide sensitive features for cloud deployments
+
+## 📡 About SMS Gateway
+
+This GUI is designed to work with the [SMS Gateway service](https://sms-gate.app), a powerful SMS API platform that provides:
+
+- **Device Management** - Register and manage multiple SMS devices
+- **Webhook Support** - Real-time notifications for SMS events
+- **Delivery Reports** - Track message delivery status
+- **RESTful API** - Easy integration with any application
+
+Visit [https://sms-gate.app](https://sms-gate.app) to learn more about the service and get your API credentials.
 
 ## 🛠️ Tech Stack
 
@@ -62,17 +75,23 @@ SMS_GATEWAY_USERNAME=your_username
 SMS_GATEWAY_PASSWORD=your_password
 
 # Feature Flags
-CLOUD_MODE=false
-SHOW_INBOUND_WEBHOOK=true
+CLOUD_MODE=false // enables the "logs" tab
 ```
 
-### 4. Start the Application
+### 4. Build the GUI (Required for Production)
+
+```bash
+# Build the React frontend for production
+npm run build-gui
+```
+
+### 5. Start the Application
 
 ```bash
 # Development mode (with hot reload)
 npm run dev
 
-# Production mode
+# Production mode (requires GUI to be built first)
 npm start
 ```
 
@@ -178,14 +197,32 @@ Database file: `webhooks.db` (created automatically)
 
 ### Development
 ```bash
+# Start development server (serves GUI from source)
 npm run dev
 ```
 
 ### Production
 ```bash
+# 1. Build the React frontend
 npm run build-gui
+
+# 2. Start production server (serves built GUI)
 npm start
 ```
+
+### Build Process Explained
+
+The application has two modes:
+
+**Development Mode (`npm run dev`):**
+- Serves the React app directly from source files
+- Includes hot reload for development
+- No build step required
+
+**Production Mode (`npm start`):**
+- Serves the built React app from `client-ts/gui/dist/`
+- Requires running `npm run build-gui` first
+- Optimized and minified for production
 
 ### Docker (Optional)
 ```dockerfile
@@ -198,6 +235,8 @@ RUN npm run build-gui
 EXPOSE 3003
 CMD ["npm", "start"]
 ```
+
+**Note:** The Docker build includes the `npm run build-gui` step to ensure the React frontend is built before the container starts.
 
 ## 🤝 Contributing
 
@@ -237,6 +276,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 1. Check the [Issues](https://github.com/your-username/sms-gateway-v2/issues) page
 2. Review the logs in the browser console and server terminal
 3. Ensure all environment variables are set correctly
+4. Visit the [SMS Gateway documentation](https://sms-gate.app) for API details
 
 ## 🎉 Acknowledgments
 

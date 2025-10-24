@@ -1,7 +1,7 @@
 {
   "name": "sms-gateway-v2",
   "version": "2.0.0",
-  "description": "SMS Gateway v2 with TypeScript client and modern GUI",
+  "description": "Modern GUI for SMS Gateway service (https://sms-gate.app) with React, TypeScript, and Express backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
