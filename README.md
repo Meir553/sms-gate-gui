@@ -33,7 +33,7 @@ A modern, web-based GUI for the SMS Gateway service with React, TypeScript, and 
 
 ```bash
 git clone https://github.com/Meir553/sms-gate-gui.git
-cd sms-gateway-v2
+cd sms-gate-gui
 ```
 
 ### 2. Install Dependencies
@@ -81,7 +81,7 @@ The application will be available at `http://localhost:3003`
 ## 📁 Project Structure
 
 ```
-sms-gateway-v2/
+sms-gate-gui/
 ├── client-ts/gui/          # React frontend
 │   ├── src/
 │   │   ├── components/     # React components
