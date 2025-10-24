@@ -234,7 +234,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Getting Help
 
-1. Check the [Issues](https://github.com/your-username/sms-gateway-v2/issues) page
+1. Check the [Issues](https://github.com/Meir553/sms-gate-gui/issues) page
 2. Review the logs in the browser console and server terminal
 3. Ensure all environment variables are set correctly
 
