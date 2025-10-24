@@ -32,7 +32,7 @@ A modern, web-based GUI for the SMS Gateway service with React, TypeScript, and 
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Meir553/sms-gate-gui.git
 cd sms-gateway-v2
 ```
 
